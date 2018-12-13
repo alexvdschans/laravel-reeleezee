@@ -1,0 +1,9 @@
+{
+	"name" : "avds/reeleezee",
+	"description" : "Laravel API wrapper for the Reeleezee API",
+	"authors" : [{
+			"name" : "Alex van der Schans",
+			"email" : "alex@bureau117.nl"
+		}
+	]
+}
