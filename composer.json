@@ -1,9 +1,32 @@
 {
-	"name" : "avds/laravel-reeleezee",
-	"description" : "Laravel wrapper for the Reeleezee API",
-	"authors" : [{
-			"name" : "Alex van der Schans",
-			"email" : "alex@thehuddle.nl"
-		}
-	]
+        "name" : "avds/laravel-reeleezee",
+        "description" : "Laravel wrapper for the Reeleezee API",
+        "authors" : [{
+                        "name" : "Alex van der Schans",
+                        "email" : "alex@thehuddle.nl"
+                }
+        ],
+        "autoload" : {
+                "psr-4" : {
+                        "AvdS\\Reeleezee\\" : "src/"
+                }
+        },
+        "autoload-dev" : {
+                "psr-4" : {
+                        "AvdS\\Reeleezee\\" : "tests/"
+                }
+        },
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+        "extra" : {
+                "laravel" : {
+                        "providers" : [
+                                "AvdS\\Reeleezee\\ReeleezeeServiceProvider"
+                        ],
+                        "aliases" : {
+                                "Reeleezee" : "AvdS\\Reeleezee\\Facades\\ReeleezeeFacade"
+                        }
+                }
+        }
+
 }
